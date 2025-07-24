@@ -2,75 +2,285 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Dom’s Michigan TIP Cheat-Sheet</title>
+<title>Dom &amp; Olivia – Michigan TIP Quiz</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-:root{--c:#0457c1}
-body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0 auto;
-     max-width:720px;line-height:1.55;padding:0 1rem 3.5rem}
-h1{margin:2rem 0 .5rem;text-align:center}
-h2{margin:2rem 0 .4rem;border-left:4px solid var(--c);padding-left:.4rem;font-size:1.15rem}
-ul{margin:.4rem 0 .7rem 1.1rem}
-li{margin:.25rem 0}
-.callout{background:#eef5ff;border-left:4px solid var(--c);padding:.8rem .9rem;border-radius:6px;margin:1rem 0}
-.button{display:block;width:max-content;margin:2.2rem auto 0;background:var(--c);color:#fff;
-        padding:.8rem 1.6rem;border-radius:7px;text-decoration:none;font-size:1.05rem}
-footer{margin-top:3rem;font-size:.85rem;text-align:center;color:#666}
-@media(prefers-color-scheme:dark){
- body{background:#121212;color:#e2e2e2}
- .callout{background:#0f1b2e}
-}
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:2rem;line-height:1.45}
+h1{margin-top:0}
+.question{margin-bottom:1.25rem;padding:1rem;border:1px solid #ccc;border-radius:6px}
+.question p{margin:0 0 .5rem}
+label{display:block;margin:.15rem 0}
+button{padding:.6rem 1.2rem;font-size:1rem;cursor:pointer}
+#results{margin-top:2rem;font-size:1.1rem;font-weight:600}
+.correct{color:green}
+.incorrect{color:#c00}
 </style>
 </head>
 <body>
 
-<h1>Dom’s 5-Minute TIP Prep</h1>
-<p style="text-align:center">Everything you actually need for the Michigan knowledge test—no fluff.</p>
+<h1>Practice Quiz: Dom &amp; Olivia Edition</h1>
+<p>(Every scenario stars the dynamic duo—pay attention!)</p>
 
-<h2>1. Permit Snapshot</h2>
-<ul>
-  <li>Age ≥ 16, vision-check, written exam, $16 fee.</li>
-  <li>Valid <strong>180 days</strong>; max <strong>2</strong> permits / 10 yrs.</li>
-  <li><em>No passengers, no night riding, supervised by CY-licensed adult.</em></li>
-</ul>
+<form id="quiz">
 
-<h2>2. Know These Numbers</h2>
-<ul>
-  <li><strong>4 s</strong> – ideal following distance (double in rain).</li>
-  <li><strong>.08 BAC</strong> – illegal, but impairment starts ~.02.</li>
-  <li><strong>$20 k</strong> – med-benefit insurance to ride lid-less at 21+.</li>
-  <li><strong>15 in</strong> – max handle-bar height above seat.</li>
-</ul>
+<!-- 1 -->
+<div class="question">
+<p>1. Dom is 16 today and wants to impress Olivia by getting a TIP. Is he old enough?</p>
+<label><input type="radio" name="q1" value="A"> A. Not yet—must be 18</label>
+<label><input type="radio" name="q1" value="B"> B. Only with parent signature at 15</label>
+<label><input type="radio" name="q1" value="C"> C. Yes, 16 meets the minimum age</label>
+<label><input type="radio" name="q1" value="D"> D. Age isn’t a factor, just eyesight</label>
+</div>
 
-<h2>3. T-CLOCS Walk-Around</h2>
-<ul>
-  <li><strong>T</strong>ires (pressure/tread) &amp; wheels</li>
-  <li><strong>C</strong>ontrols (levers, throttle snap-back)</li>
-  <li><strong>L</strong>ights &amp; electrics (Hi/Lo, brake lamp)</li>
-  <li><strong>O</strong>il &amp; fluids (leaks?)</li>
-  <li><strong>C</strong>hassis (chain, suspension)</li>
-  <li><strong>S</strong>tands (springs secure)</li>
-</ul>
+<!-- 2 -->
+<div class="question">
+<p>2. Dom’s shiny new TIP will expire after how many days (unless he upgrades first)?</p>
+<label><input type="radio" name="q2" value="A"> A. 90 days</label>
+<label><input type="radio" name="q2" value="B"> B. 120 days</label>
+<label><input type="radio" name="q2" value="C"> C. 150 days</label>
+<label><input type="radio" name="q2" value="D"> D. 180 days</label>
+</div>
 
-<h2>4. Crash-Dodging Cheats</h2>
-<ul>
-  <li><strong>SIPDE:</strong> Scan → Identify → Predict → Decide → Execute.</li>
-  <li>Quick stop = both brakes, eyes up, progressive squeeze.</li>
-  <li>Swerve = press-press (counter-steer), no braking mid-lean.</li>
-  <li>Intersections = #1 threat. Cover brakes, create escape gap.</li>
-</ul>
+<!-- 3 -->
+<div class="question">
+<p>3. Dom wants to scoop Olivia for an evening ice-cream run. Under TIP rules he may:</p>
+<label><input type="radio" name="q3" value="A"> A. Give her a ride if she wears a helmet</label>
+<label><input type="radio" name="q3" value="B"> B. Ride only in daylight hours (no passengers)</label>
+<label><input type="radio" name="q3" value="C"> C. Cruise after dark on roads &lt;45 mph</label>
+<label><input type="radio" name="q3" value="D"> D. Ride unsupervised as long as it’s local</label>
+</div>
 
-<h2>5. Helmet &amp; Gear Law</h2>
-<ul>
-  <li>&lt;21 = helmet always.</li>
-  <li>21+ may skip helmet <em>only if</em> 2 yrs CY or safety-course <strong>and</strong> $20 k med-insurance.</li>
-  <li>Bike must have lights on, one mirror, horn, legal exhaust.</li>
-</ul>
+<!-- 4 -->
+<div class="question">
+<p>4. Dom wonders: “If I blow my first permit, how many TIPs can I get in 10 years?”</p>
+<label><input type="radio" name="q4" value="A"> A. Just one—no second chances</label>
+<label><input type="radio" name="q4" value="B"> B. Two permits total</label>
+<label><input type="radio" name="q4" value="C"> C. Three, if he pays extra</label>
+<label><input type="radio" name="q4" value="D"> D. Unlimited—he can re-apply forever</label>
+</div>
 
-<div class="callout"><strong>Fast path to full CY:</strong> finish a Basic Rider Course → skills test waived.</div>
+<!-- 5 -->
+<div class="question">
+<p>5. At 23, Dom dreams of wind-in-his-hair selfies with Olivia. He can ride without a helmet only if:</p>
+<label><input type="radio" name="q5" value="A"> A. He carries $20 k medical insurance <em>and</em> has 2&nbsp;yrs CY endorsement or a safety-course cert</label>
+<label><input type="radio" name="q5" value="B"> B. He wears cool sunglasses and a windshield</label>
+<label><input type="radio" name="q5" value="C"> C. His employer’s health plan covers him</label>
+<label><input type="radio" name="q5" value="D"> D. He adds fancy passenger footrests</label>
+</div>
 
-<a class="button" href="quiz.html">🚦  Start the 25-Question Quiz  🚦</a>
+<!-- 6 -->
+<div class="question">
+<p>6. On the way to grab downtown tacos with Olivia, Dom faces the highest crash risk at:</p>
+<label><input type="radio" name="q6" value="A"> A. Rural sweeping curves</label>
+<label><input type="radio" name="q6" value="B"> B. Intersections with cross-traffic</label>
+<label><input type="radio" name="q6" value="C"> C. Expressway on-ramps</label>
+<label><input type="radio" name="q6" value="D"> D. The middle lane of the highway</label>
+</div>
 
-<footer>© 2025 • Built for Dom (Olivia-approved) • ChatGPT o3</footer>
+<!-- 7 -->
+<div class="question">
+<p>7. Before surprising Olivia with coffee, Dom should check tire pressure:</p>
+<label><input type="radio" name="q7" value="A"> A. At every fuel stop (bonus style points)</label>
+<label><input type="radio" name="q7" value="B"> B. Once a month</label>
+<label><input type="radio" name="q7" value="C"> C. Only before multi-state trips</label>
+<label><input type="radio" name="q7" value="D"> D. Only when a dashboard light appears</label>
+</div>
+
+<!-- 8 -->
+<div class="question">
+<p>8. Olivia reminds Dom that “E” in SIPDE stands for:</p>
+<label><input type="radio" name="q8" value="A"> A. Exit</label>
+<label><input type="radio" name="q8" value="B"> B. Eliminate</label>
+<label><input type="radio" name="q8" value="C"> C. Execute</label>
+<label><input type="radio" name="q8" value="D"> D. Evaluate</label>
+</div>
+
+<!-- 9 -->
+<div class="question">
+<p>9. Riding ahead of Olivia in drizzle, Dom’s best lane position is the one that:</p>
+<label><input type="radio" name="q9" value="A"> A. Is always dead-center</label>
+<label><input type="radio" name="q9" value="B"> B. Constantly adjusts for visibility and space</label>
+<label><input type="radio" name="q9" value="C"> C. Matches the car’s left tire track</label>
+<label><input type="radio" name="q9" value="D"> D. Hugs the far right edge</label>
+</div>
+
+<!-- 10 -->
+<div class="question">
+<p>10. Dom spots Olivia waving on the sidewalk. To stop quickly in a straight line he should:</p>
+<label><input type="radio" name="q10" value="A"> A. Slam the rear brake only</label>
+<label><input type="radio" name="q10" value="B"> B. Yank the front brake only</label>
+<label><input type="radio" name="q10" value="C"> C. Apply both brakes firmly, no skids</label>
+<label><input type="radio" name="q10" value="D"> D. Downshift first, then feather brakes</label>
+</div>
+
+<!-- 11 -->
+<div class="question">
+<p>11. Dom’s handlebars start to wobble as he shows off. He should:</p>
+<label><input type="radio" name="q11" value="A"> A. Crank the throttle harder—maybe it fixes itself</label>
+<label><input type="radio" name="q11" value="B"> B. Hold the bars firmly &amp; ease off throttle smoothly</label>
+<label><input type="radio" name="q11" value="C"> C. Grab both brakes immediately</label>
+<label><input type="radio" name="q11" value="D"> D. Bail off the bike before Olivia sees</label>
+</div>
+
+<!-- 12 -->
+<div class="question">
+<p>12. It starts sprinkling during Dom &amp; Olivia’s ride. Pavement is slipperiest:</p>
+<label><input type="radio" name="q12" value="A"> A. During a downpour</label>
+<label><input type="radio" name="q12" value="B"> B. After the rain completely stops</label>
+<label><input type="radio" name="q12" value="C"> C. In the first few minutes of light rain</label>
+<label><input type="radio" name="q12" value="D"> D. After an hour of steady rain</label>
+</div>
+
+<!-- 13 -->
+<div class="question">
+<p>13. Dom passes a semi so Olivia can stay in sight. Which vehicle has the biggest blind spots?</p>
+<label><input type="radio" name="q13" value="A"> A. The semi-truck</label>
+<label><input type="radio" name="q13" value="B"> B. A compact car</label>
+<label><input type="radio" name="q13" value="C"> C. Dom’s motorcycle</label>
+<label><input type="radio" name="q13" value="D"> D. A small SUV</label>
+</div>
+
+<!-- 14 -->
+<div class="question">
+<p>14. Dom follows Olivia along a country lane. Under perfect conditions, the safest gap is:</p>
+<label><input type="radio" name="q14" value="A"> A. 1 second (he loves tail-gating her)</label>
+<label><input type="radio" name="q14" value="B"> B. 2 seconds</label>
+<label><input type="radio" name="q14" value="C"> C. 4 seconds</label>
+<label><input type="radio" name="q14" value="D"> D. 6 seconds</label>
+</div>
+
+<!-- 15 -->
+<div class="question">
+<p>15. At a BBQ Dom has a beer. Alcohol can reach the brain in as little as:</p>
+<label><input type="radio" name="q15" value="A"> A. 30 seconds</label>
+<label><input type="radio" name="q15" value="B"> B. 5 minutes</label>
+<label><input type="radio" name="q15" value="C"> C. 15 minutes</label>
+<label><input type="radio" name="q15" value="D"> D. 1 hour</label>
+</div>
+
+<!-- 16 -->
+<div class="question">
+<p>16. Dom leans into a scenic curve with Olivia behind him. Best practice is to:</p>
+<label><input type="radio" name="q16" value="A"> A. Brake hard once inside the curve</label>
+<label><input type="radio" name="q16" value="B"> B. Look through the turn and roll on throttle</label>
+<label><input type="radio" name="q16" value="C"> C. Stay bolt-upright while the bike leans under him</label>
+<label><input type="radio" name="q16" value="D"> D. Hug the inside line no matter what</label>
+</div>
+
+<!-- 17 -->
+<div class="question">
+<p>17. Riding past Olivia’s favorite café and parked cars, Dom should:</p>
+<label><input type="radio" name="q17" value="A"> A. Ride far right, away from moving traffic</label>
+<label><input type="radio" name="q17" value="B"> B. Ride left tire track watching for door openings</label>
+<label><input type="radio" name="q17" value="C"> C. Zig-zag to stay visible</label>
+<label><input type="radio" name="q17" value="D"> D. Accelerate to clear the block quickly</label>
+</div>
+
+<!-- 18 -->
+<div class="question">
+<p>18. Olivia says Dom “vanishes” to on-coming drivers when he:</p>
+<label><input type="radio" name="q18" value="A"> A. Uses high beams in daylight</label>
+<label><input type="radio" name="q18" value="B"> B. Wears neon gear</label>
+<label><input type="radio" name="q18" value="C"> C. Rides with his headlight off</label>
+<label><input type="radio" name="q18" value="D"> D. Gives a quick horn tap</label>
+</div>
+
+<!-- 19 -->
+<div class="question">
+<p>19. Dom practices parking-lot figure-eights for Olivia. He uses the clutch “friction zone” to:</p>
+<label><input type="radio" name="q19" value="A"> A. Downshift faster</label>
+<label><input type="radio" name="q19" value="B"> B. Crawl at walking speed smoothly</label>
+<label><input type="radio" name="q19" value="C"> C. Stop in an emergency</label>
+<label><input type="radio" name="q19" value="D"> D. Quiet the engine</label>
+</div>
+
+<!-- 20 -->
+<div class="question">
+<p>20. Dom, Olivia, and two friends ride in a group. Only ONE bike at a time should:</p>
+<label><input type="radio" name="q20" value="A"> A. Lead with high beams</label>
+<label><input type="radio" name="q20" value="B"> B. Ride staggered</label>
+<label><input type="radio" name="q20" value="C"> C. Pass another vehicle</label>
+<label><input type="radio" name="q20" value="D"> D. Use turn signals</label>
+</div>
+
+<!-- 21 -->
+<div class="question">
+<p>21. A flat front tire hits Dom first as a wiggle in the:</p>
+<label><input type="radio" name="q21" value="A"> A. Seat</label>
+<label><input type="radio" name="q21" value="B"> B. Handlebars</label>
+<label><input type="radio" name="q21" value="C"> C. Rear swing-arm</label>
+<label><input type="radio" name="q21" value="D"> D. Engine vibes</label>
+</div>
+
+<!-- 22 -->
+<div class="question">
+<p>22. Dom must cross railroad tracks running parallel to his lane en-route to Olivia. He should:</p>
+<label><input type="radio" name="q22" value="A"> A. Lean sharply without leaving lane</label>
+<label><input type="radio" name="q22" value="B"> B. Square up at 45–90°, checking traffic first</label>
+<label><input type="radio" name="q22" value="C"> C. Stay straight &amp; throttle hard</label>
+<label><input type="radio" name="q22" value="D"> D. Stop, dismount, walk the bike</label>
+</div>
+
+<!-- 23 -->
+<div class="question">
+<p>23. Before Olivia hops on as passenger, Michigan law requires Dom’s bike to have:</p>
+<label><input type="radio" name="q23" value="A"> A. A romantic playlist &amp; fuel-tank grab handle</label>
+<label><input type="radio" name="q23" value="B"> B. Passenger footrests and an actual passenger seat</label>
+<label><input type="radio" name="q23" value="C"> C. Her helmet only</label>
+<label><input type="radio" name="q23" value="D"> D. No passengers allowed, period</label>
+</div>
+
+<!-- 24 -->
+<div class="question">
+<p>24. Dom spots a Michigan-sized pothole. Safest tactic is usually to:</p>
+<label><input type="radio" name="q24" value="A"> A. Loosen his grip &amp; speed up</label>
+<label><input type="radio" name="q24" value="B"> B. Hammer the brakes right before it</label>
+<label><input type="radio" name="q24" value="C"> C. Rise slightly on pegs, throttle steady, hit it square</label>
+<label><input type="radio" name="q24" value="D"> D. Swerve last-second</label>
+</div>
+
+<!-- 25 -->
+<div class="question">
+<p>25. Stopping behind a car at a light with Olivia nearby, Dom should:</p>
+<label><input type="radio" name="q25" value="A"> A. Roll into the driver’s blind spot</label>
+<label><input type="radio" name="q25" value="B"> B. Center up right behind the bumper</label>
+<label><input type="radio" name="q25" value="C"> C. Stay in 1st gear, leave an escape path</label>
+<label><input type="radio" name="q25" value="D"> D. Honk to say “hey!”</label>
+</div>
+
+</form>
+
+<button id="scoreBtn">Score Quiz</button>
+
+<div id="results"></div>
+
+<script>
+/* correct answers */
+const correct={
+q1:"C",q2:"D",q3:"B",q4:"B",q5:"A",
+q6:"B",q7:"A",q8:"C",q9:"B",q10:"C",
+q11:"B",q12:"C",q13:"A",q14:"C",q15:"A",
+q16:"B",q17:"B",q18:"C",q19:"B",q20:"C",
+q21:"B",q22:"B",q23:"B",q24:"C",q25:"C"};
+
+document.getElementById('scoreBtn').addEventListener('click',()=>{
+  const form=document.getElementById('quiz');
+  let score=0,unanswered=0;
+  form.querySelectorAll('.correct,.incorrect').forEach(el=>el.classList.remove('correct','incorrect'));
+  Object.keys(correct).forEach(name=>{
+    const chosen=form.querySelector(`input[name=${name}]:checked`);
+    if(!chosen){unanswered++;return;}
+    const qDiv=chosen.closest('.question');
+    if(chosen.value===correct[name]){score++;qDiv.classList.add('correct');}
+    else{qDiv.classList.add('incorrect');}
+  });
+  const total=Object.keys(correct).length;
+  const percent=Math.round(score/total*100);
+  document.getElementById('results').textContent=
+    `Score: ${score}/${total} (${percent}%).${unanswered?`  ${unanswered} unanswered.`:''}`;
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+</script>
+
 </body>
 </html>
